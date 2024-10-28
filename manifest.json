@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "JustErikDememon Rewards",
+  "version": "1.0",
+  "description": "Play Games For Robux.",
+  "permissions": ["activeTab"],
+  "icons": {
+    "128": "icon128.png"  // Path to your icon file
+  },
+  "action": {
+    "default_icon": "icon128.png", // Use the same icon for the action button
+    "default_title": "Roblox Sidebar Button"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.roblox.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
